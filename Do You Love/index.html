@@ -1,0 +1,82 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap');
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #008080;
+        }
+        .window {
+            width: 600px;
+            border: 2px solid #000;
+            background-color: #c0c0c0;
+            margin: 200px auto;
+            box-shadow: 5px 5px 0 #000;
+        }
+        .title-bar {
+            background-color: #000080;
+            color: #fff;
+            padding: 2px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title-bar button {
+            background-color: #c0c0c0;
+            border: 1px solid #000;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .content {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .content img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .buttons button {
+            background-color: #c0c0c0;
+            border: 2px solid #000;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="window">
+   <div class="title-bar">
+    <span>❤</span>
+    <button>x</button>
+   </div>
+   <div class="content">
+    <img alt="A cute cat illustration" height="100" src="images/fat.png" width="100"/>
+    <span>Do you love me? ❤</span>
+   </div>
+   <div class="buttons">
+    <button onclick="showLove()">Yes</button>
+    <button onclick="showLove()">Yes, I do</button>
+   </div>
+  </div>
+
+  <script>
+    function showLove() {
+      alert("Love you too!!! ❤❤❤");
+    }
+  </script>
+ </body>
+</html>
